@@ -15,13 +15,15 @@ int main() {
 
     source.unsetf(ios::skipws);
 
-    while (!source.eof()) {
+    while (!source.eof()){
         source >> c;
-        if(c == '\t'){
+        if(!source.eof()){
+            if(c == '\t'){
             dest << "    ";
             continue;
         }
         dest << c;
+        }
     }
 
     source.close();
