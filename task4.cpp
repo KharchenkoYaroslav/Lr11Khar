@@ -13,7 +13,6 @@ int main() {
     }
 
     string str = "";
-    char c;
 
     file.seekp(80, ios::beg);
 
